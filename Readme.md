@@ -1,6 +1,6 @@
 # News API Telegram
 
-Este projeto utiliza o Airflow para consumir a API NewsAPI, realizando a busca das notícias mais relevantes em vários portais de notícias do Brasil. A busca é feita com base em palavras-chave, como "Inteligência Artificial" e "Big Techs", de acordo com as preferências do usuário. As notícias selecionadas são então enviadas diretamente para o aplicativo do Telegram no horário desejado.
+Este projeto utiliza o Airflow para consumir a API NewsAPI, realizando a busca das notícias mais relevantes em vários portais de notícias do Brasil. A busca é feita com base em palavras-chave, como "Inteligência Artificial" e "Big Techs", de acordo com as preferências do usuário. As notícias selecionadas são então enviadas diretamente para o aplicativo do Telegram no horário desejado. Além disso, elas são armazenadas nas camadas Bronze, Silver e Gold do Postgres, estrutura conhecida na Engenharia de Dados.
 
 # Tecnologias
 
