@@ -1,5 +1,4 @@
 /.env
 /logs
 Schedule.py
-*.pyc
 __pycache__/
