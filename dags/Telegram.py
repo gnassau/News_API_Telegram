@@ -14,7 +14,8 @@ def send_telegram_message(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
     params = {
         'chat_id': CHAT_ID,
-        'text': message
+        'text': message,
+        'parse_mode': 'Markdown'
     }
     response = requests.get(url, params=params)
     if response.status_code == 200:
@@ -43,13 +44,13 @@ def query_and_send_result():
     results = cursor.fetchall()
 
     # Formatar os resultados como uma string para enviar via Telegram
-    message = "Últimas notícias:\n\n"
+    message = "🔔 *Últimas Notícias:*\n\n"
     for row in results:
         titulo = row[0]  # Título da notícia
         url = row[1]  # URL da notícia
         data_publicacao = row[2] # Data de publicação
         data_formatada = data_publicacao.strftime('%d/%m/%Y %H:%M')
-        message += f"Notícia: {titulo}\nURL: {url}\nData: {data_formatada}\n\n"
+        message += f"*Notícia:* {titulo}\n*URL:* {url}\n*Data:* {data_formatada}\n\n"
 
     # Enviar os resultados via Telegram
     send_telegram_message(message)
