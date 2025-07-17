@@ -15,7 +15,7 @@ Este projeto utiliza o Airflow para consumir a API NewsAPI, realizando a busca d
 2. Instale e rode o Airflow na sua máquina e configure as credenciais em Variables.
 3. Gere um token da news API em https://newsapi.org/
 4. Consiga as credenciais de API do Telegram.
-5. Clone o repositório para pegar as configurações do container no Docker.
+5. Clone o repositório para pegar as configurações do container no Docker - instale a lib dentro de requirements.txt.
 6. Rode as DAGS dentro do Airflow após configurar os intervalos de tempo desejados.
 
 # Como conseguir as credenciais do Telegram
