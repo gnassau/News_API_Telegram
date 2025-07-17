@@ -37,3 +37,7 @@ Este projeto utiliza o Airflow para consumir a API NewsAPI, realizando a busca d
 https://api.telegram.org/bot<SEU_TOKEN>/getUpdates
 ```
 Isso retornará os dados do chat e você poderá identificar o chat_id.
+
+## Exemplo de Notificação Telegram
+
+![alt text](image.png)
